@@ -2,13 +2,23 @@
 
 # Sports Booking Application - Backend
 
+**Name: Shivam Kumar Singh
 **College ID Number**: IEC2021078
+
+##Description
+This is the backend part of the Sports Booking Application built using Node.js, Express, and MongoDB. The Sports Booking Application is a web-based platform designed to facilitate the booking of sports facilities. Users can easily find and reserve courts for various sports at different centers. The application provides a user-friendly interface for both users and administrators, allowing for efficient management of bookings, sports, and centers.
+
+##Key Features
+- User Registration and Authentication: Users can create accounts, log in, and manage their bookings securely using JWT (JSON Web Tokens) for authentication.
+- Booking Management: Users can view available courts, select time slots, and make bookings. The application prevents double bookings by checking for existing reservations.
+
+  
 
 ## Deployed Link
 - [Backend Application](https://gt-backend.onrender.com/)
 
 ## Description
-This is the backend part of the Sports Booking Application built using Node.js, Express, and MongoDB. It provides RESTful APIs for managing sports centers, sports, bookings, and user authentication.
+ It provides RESTful APIs for managing sports centers, sports, bookings, and user authentication.
 
 ## Prerequisites
 - Node.js (v14 or higher)
@@ -19,13 +29,11 @@ This is the backend part of the Sports Booking Application built using Node.js, 
 
 1. **Clone the Repository**
    ```
-   bash
-   git clone https://github.com/yourusername/sports-booking-backend.git
-   cd sports-booking-backend
+   git clone https://github.com/shivamsinghindia/GT-backend.git
+   cd backend
    ```
 2. **Install Dependencies**
    ```
-   bash
    npm install
    ```
 
@@ -45,11 +53,8 @@ This is the backend part of the Sports Booking Application built using Node.js, 
 8. **Open your API client (like Postman) and test the endpoints at** `http://localhost:4000/api`.
 
 ## Deployment Instructions
-To deploy the backend application, you can use platforms like Render, Heroku, or DigitalOcean. Follow the respective platform's documentation for deployment instructions.
+To deploy the backend application, we can use platforms like Render, Heroku, or DigitalOcean. Here I have used Render for deployment.
 
-## Assumptions and Limitations
-- The application assumes that MongoDB is properly set up and accessible.
-- The application is designed for RESTful API consumption and may not include all edge cases.
 
 ## Special Instructions
 - Ensure that the CORS settings are configured to allow requests from the frontend application.
