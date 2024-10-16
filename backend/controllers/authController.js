@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 exports.register = async (req, res) => {
   try {
     const { username, password } = req.body;
+    // console.log(req.body);
 
     // Check if user already exists
     let user = await User.findOne({ username });
@@ -22,8 +23,9 @@ exports.register = async (req, res) => {
     // Hash password
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(password, salt);
-
+    // console.log("1");
     await user.save();
+    // console.log(user);
 
     // Create and return JWT token
     const payload = {
@@ -32,10 +34,8 @@ exports.register = async (req, res) => {
       }
     };
 
-    jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' }, (err, token) => {
-      if (err) throw err;
-      res.json({ token });
-    });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+    res.json({ user });
   } catch (error) {
     res.status(500).json({ message: 'Error in registration', error: error.message });
   }
@@ -65,10 +65,8 @@ exports.login = async (req, res) => {
       }
     };
 
-    jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' }, (err, token) => {
-      if (err) throw err;
-      res.json({ token });
-    });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token });
   } catch (error) {
     res.status(500).json({ message: 'Error in login', error: error.message });
   }
