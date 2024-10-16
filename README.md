@@ -2,8 +2,9 @@
 
 # Sports Booking Application - Backend
 
-**Name: Shivam Kumar Singh**
-**College ID Number**: IEC2021078**
+**Name**: Shivam Kumar Singh
+
+**College ID Number**: IEC2021078
 
 ## Description
 This is the backend part of the Sports Booking Application built using Node.js, Express, and MongoDB. The Sports Booking Application is a web-based platform designed to facilitate the booking of sports facilities. Users can easily find and reserve courts for various sports at different centers. The application provides a user-friendly interface for both users and administrators, allowing for efficient management of bookings, sports, and centers.
