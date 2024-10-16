@@ -2,13 +2,13 @@
 
 # Sports Booking Application - Backend
 
-**Name: Shivam Kumar Singh
-**College ID Number**: IEC2021078
+**Name: Shivam Kumar Singh**
+**College ID Number**: IEC2021078**
 
-##Description
+## Description
 This is the backend part of the Sports Booking Application built using Node.js, Express, and MongoDB. The Sports Booking Application is a web-based platform designed to facilitate the booking of sports facilities. Users can easily find and reserve courts for various sports at different centers. The application provides a user-friendly interface for both users and administrators, allowing for efficient management of bookings, sports, and centers.
 
-##Key Features
+## Key Features
 - User Registration and Authentication: Users can create accounts, log in, and manage their bookings securely using JWT (JSON Web Tokens) for authentication.
 - Booking Management: Users can view available courts, select time slots, and make bookings. The application prevents double bookings by checking for existing reservations.
 
@@ -17,8 +17,6 @@ This is the backend part of the Sports Booking Application built using Node.js, 
 ## Deployed Link
 - [Backend Application](https://gt-backend.onrender.com/)
 
-## Description
- It provides RESTful APIs for managing sports centers, sports, bookings, and user authentication.
 
 ## Prerequisites
 - Node.js (v14 or higher)
@@ -59,8 +57,5 @@ To deploy the backend application, we can use platforms like Render, Heroku, or 
 ## Special Instructions
 - Ensure that the CORS settings are configured to allow requests from the frontend application.
 - Make sure to handle JWT tokens securely in your application.
-
-## Links
-- [Deployed Backend](https://gt-backend.onrender.com/)
 
 
